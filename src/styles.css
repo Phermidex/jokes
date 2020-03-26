@@ -1,0 +1,105 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  .devword,  .devword a {
+    font-size: 15px !important;
+    text-align: end;
+    color: #8e8c8c !important;
+    text-decoration: none;
+  }
+
+.devword a:hover {
+    font-size: 15px !important;
+    text-align: end;
+    color: #975712 !important;
+    text-decoration: none;
+  }
+
+
+  body {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav {
+    background-color: rgb(17, 17, 17);
+    padding: 0.1em;
+  }
+  
+  button {
+    padding: 1em;
+    border: 1px solid #fcfcfc;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  button:hover {
+    background-color: #fcfcfc;
+    color: #000;
+    border-color: #000;
+  }
+
+  .container nav > ul > li {
+    display: inline;
+    color: #fff;
+    padding-left: 5px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    min-height: 100vh;
+    background-color: black;
+  }
+
+  .container p {
+    background-color: #020202;
+    color: #fff;
+    padding: 2em;
+    font-size: 3em;
+    word-wrap: break-word;
+    grid-area: 'p';
+    display: grid;
+  }
+
+  .media {
+    display: grid;
+    grid-template-columns: 49% auto;
+}
+.joker-media button {
+  margin: auto;
+  display: grid;
+  width: 50%;
+  font-size: 2em;
+  background-color: #fff;
+  color: #000;
+  transform: 2s;
+  grid-area: 'joker-media';
+}
+
+
+.active-tab{
+  display: block;
+}
+
+.desactive-tab {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px){
+  .media {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'joker-media'
+    'p'
+    ;
+}
+
+
+
+}
